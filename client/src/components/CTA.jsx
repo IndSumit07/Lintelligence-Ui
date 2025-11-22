@@ -48,7 +48,7 @@ const CTA = () => {
           </NavLink>
           
           <a 
-            href="https://github.com" 
+            href="https://github.com/IndSumit07/Lintelligence-Ui" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full sm:w-auto"

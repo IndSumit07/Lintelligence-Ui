@@ -51,7 +51,7 @@ const Navbar = () => {
             <Brain size={24} className="text-white" />
           </div>
           <h1 className="text-lg md:text-xl font-michroma text-white tracking-wide">
-            Lintelligence
+            Lintelligence <span className="text-orange-400">UI</span>
           </h1>
         </NavLink>
 
@@ -85,7 +85,7 @@ const Navbar = () => {
         {/* Desktop Actions */}
         <div className="hidden md:flex justify-center items-center gap-4">
           <a
-            href="https://github.com"
+            href="https://github.com/IndSumit07/Lintelligence-Ui"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 bg-white/5 border border-white/10 flex justify-center items-center rounded-full cursor-pointer hover:bg-white/10 hover:border-white/20 transition-all duration-300 group"

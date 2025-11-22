@@ -141,7 +141,7 @@ const Features = () => {
               Ready to Get Started?
             </h2>
             <p className="text-white/60 font-space text-lg mb-8 max-w-2xl mx-auto">
-              Join thousands of developers building amazing applications with Lintelligence
+              Join thousands of developers building amazing applications with Lintelligence UI
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/components">

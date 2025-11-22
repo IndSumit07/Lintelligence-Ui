@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: Github, label: "GitHub", url: "https://github.com", color: "hover:text-white" },
+    { icon: Github, label: "GitHub", url: "https://github.com/IndSumit07/Lintelligence-Ui", color: "hover:text-white" },
     { icon: Twitter, label: "Twitter", url: "https://twitter.com", color: "hover:text-blue-400" },
     { icon: Linkedin, label: "LinkedIn", url: "https://linkedin.com", color: "hover:text-blue-500" },
   ];
@@ -40,7 +40,7 @@ const Contact = () => {
       icon: Mail,
       title: "Email Us",
       description: "Get in touch via email",
-      contact: "hello@lintelligence.dev",
+      contact: "developer.sumit.personal@gmail.com",
       gradient: "from-orange-500 to-orange-600",
     },
     {
@@ -54,7 +54,7 @@ const Contact = () => {
       icon: Github,
       title: "GitHub",
       description: "Report issues or contribute",
-      contact: "github.com/lintelligence",
+      contact: "github.com/IndSumit07/Lintelligence-Ui",
       gradient: "from-orange-400 to-orange-500",
     },
   ];
@@ -198,7 +198,7 @@ const Contact = () => {
             className="space-y-8"
           >
             <div className="card-base rounded-2xl p-8">
-              <h3 className="text-2xl font-michroma text-white mb-4">Why Choose Lintelligence?</h3>
+              <h3 className="text-2xl font-michroma text-white mb-4">Why Choose Lintelligence UI?</h3>
               <ul className="space-y-4 text-white/60 font-space">
                 <li className="flex items-start gap-3">
                   <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 flex-shrink-0" />

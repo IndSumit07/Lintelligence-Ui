@@ -14,7 +14,7 @@ const Docs = () => {
       sections: [
         {
           title: "Installation",
-          content: "Lintelligence is a copy-paste component library. Simply browse the components section, find what you need, and copy the code directly into your project. No npm installation required!"
+          content: "Lintelligence UI is a copy-paste component library. Simply browse the components section, find what you need, and copy the code directly into your project. No npm installation required!"
         },
         {
           title: "Prerequisites",
@@ -87,8 +87,8 @@ const Docs = () => {
 
   const faqs = [
     {
-      question: "Is Lintelligence free to use?",
-      answer: "Yes! Lintelligence is completely free and open-source. You can use it in personal and commercial projects without any restrictions."
+      question: "Is Lintelligence UI free to use?",
+      answer: "Yes! Lintelligence UI is completely free and open-source. You can use it in personal and commercial projects without any restrictions."
     },
     {
       question: "Do I need to install anything?",
@@ -123,7 +123,7 @@ const Docs = () => {
       answer: "We regularly add new components and update existing ones. Follow us on social media or star our GitHub repo to stay updated!"
     },
     {
-      question: "Can I contribute to Lintelligence?",
+      question: "Can I contribute to Lintelligence UI?",
       answer: "Yes! We welcome contributions. Check out our GitHub repository for contribution guidelines and open issues that need help."
     }
   ];
@@ -160,7 +160,7 @@ const Docs = () => {
             Everything You Need to Know
           </h1>
           <p className="text-white/60 font-space text-lg max-w-2xl mx-auto">
-            Learn how to use Lintelligence components in your projects
+            Learn how to use Lintelligence UI components in your projects
           </p>
 
           {/* Search */}

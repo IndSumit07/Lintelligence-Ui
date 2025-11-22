@@ -25,7 +25,7 @@ const Hero = () => {
           className="glass-effect border border-white/10 px-4 py-2 rounded-full text-white/80 font-space flex items-center gap-2 text-sm hover:bg-white/5 transition-colors cursor-default"
         >
           <Sparkles size={14} className="text-orange-400" />
-          <span>Lintelligence 1.0 is now live</span>
+          <span>Lintelligence UI 1.0 is now live</span>
         </motion.div>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] font-michroma tracking-tight">
