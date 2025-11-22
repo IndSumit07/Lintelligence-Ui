@@ -19,6 +19,17 @@ import { BasicBadge, OrangeBadge, OutlineBadge, SuccessBadge, ErrorBadge, Warnin
 import { BasicModal, ConfirmModal, SuccessModal, InfoModal } from "../components/ModalComponents";
 import { BasicTabs, PillTabs, IconTabs, VerticalTabs } from "../components/TabComponents";
 
+// New component imports
+import { SimpleNotification, SuccessNotification, ErrorNotification, InfoNotification, MessageNotification, EmailNotification } from "../components/NotificationComponents";
+import { SimpleStatCard, RevenueStatCard, RatingStatCard, EngagementStatCard, PerformanceStatCard, TimeStatCard, AchievementStatCard, LikesStatCard } from "../components/StatCardComponents";
+import { SimpleProfileCard, DetailedProfileCard, CompactProfileCard, SocialProfileCard, TeamMemberCard, ContactProfileCard } from "../components/ProfileCardComponents";
+import { SimpleSearchBar, SearchBarWithButton, SearchBarWithFilter, SearchBarWithTags, SearchBarWithDropdown, SearchBarWithSuggestions } from "../components/SearchBarComponents";
+import { SimpleCheckbox, RoundedCheckbox, CheckboxGroup, IndeterminateCheckbox, SimpleRadio, CardRadio, ToggleSwitch, ToggleSwitchWithLabels } from "../components/CheckboxRadioComponents";
+import { SimpleTimelineItem, DetailedTimeline, HorizontalTimeline, ActivityTimeline, MilestoneTimeline } from "../components/TimelineComponents";
+import { SimpleMetricCard, CompactMetricCard, DetailedMetricCard, MetricCardWithChart, ComparisonMetricCard, GoalMetricCard, TrendMetricCard } from "../components/MetricCardComponents";
+import { ImageMediaCard, VideoMediaCard, AudioMediaCard, DocumentMediaCard, GalleryMediaCard, PlaylistMediaCard } from "../components/MediaCardComponents";
+import { SimpleTag, ColoredTag, RemovableTag, IconTag, PillTag, DotTag, CountTag, HashTag, StarTag, ZapTag, FlameTag, AwardTag, TrendingTag, VerifiedTag, TagGroup, InteractiveTagGroup, SizeVariantTags, OutlineTag, SolidTag, GradientTag } from "../components/TagComponents";
+
 const BasicModalWrapper = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -83,6 +94,15 @@ const Components = () => {
     "Badges",
     "Modals",
     "Tabs",
+    "Notifications",
+    "Stat Cards",
+    "Profile Cards",
+    "Search Bars",
+    "Checkboxes & Radios",
+    "Timelines",
+    "Metric Cards",
+    "Media Cards",
+    "Tags",
   ];
 
   return (
@@ -1724,6 +1744,159 @@ const MyComponent = () => (
   <VerticalTabs />
 );`
               }
+            ]}
+          />
+        )}
+
+        {isActive === "Notifications" && (
+          <GenericSection
+            title="Notifications"
+            description="Toast notifications and alerts"
+            components={[
+              { name: "Simple Notification", component: <SimpleNotification /> },
+              { name: "Success Notification", component: <SuccessNotification /> },
+              { name: "Error Notification", component: <ErrorNotification /> },
+              { name: "Info Notification", component: <InfoNotification /> },
+              { name: "Message Notification", component: <MessageNotification /> },
+              { name: "Email Notification", component: <EmailNotification /> }
+            ]}
+          />
+        )}
+
+        {isActive === "Stat Cards" && (
+          <GenericSection
+            title="Stat Cards"
+            description="Statistics and data display cards"
+            components={[
+              { name: "Simple Stat Card", component: <SimpleStatCard /> },
+              { name: "Revenue Stat Card", component: <RevenueStatCard /> },
+              { name: "Rating Stat Card", component: <RatingStatCard /> },
+              { name: "Engagement Stat Card", component: <EngagementStatCard /> },
+              { name: "Performance Stat Card", component: <PerformanceStatCard /> },
+              { name: "Time Stat Card", component: <TimeStatCard /> },
+              { name: "Achievement Stat Card", component: <AchievementStatCard /> },
+              { name: "Likes Stat Card", component: <LikesStatCard /> }
+            ]}
+          />
+        )}
+
+        {isActive === "Profile Cards" && (
+          <GenericSection
+            title="Profile Cards"
+            description="User profile and contact cards"
+            components={[
+              { name: "Simple Profile Card", component: <SimpleProfileCard /> },
+              { name: "Detailed Profile Card", component: <DetailedProfileCard /> },
+              { name: "Compact Profile Card", component: <CompactProfileCard /> },
+              { name: "Social Profile Card", component: <SocialProfileCard /> },
+              { name: "Team Member Card", component: <TeamMemberCard /> },
+              { name: "Contact Profile Card", component: <ContactProfileCard /> }
+            ]}
+          />
+        )}
+
+        {isActive === "Search Bars" && (
+          <GenericSection
+            title="Search Bars"
+            description="Search inputs and filters"
+            components={[
+              { name: "Simple Search Bar", component: <SimpleSearchBar /> },
+              { name: "Search Bar with Button", component: <SearchBarWithButton /> },
+              { name: "Search Bar with Filter", component: <SearchBarWithFilter /> },
+              { name: "Search Bar with Tags", component: <SearchBarWithTags /> },
+              { name: "Search Bar with Dropdown", component: <SearchBarWithDropdown /> },
+              { name: "Search Bar with Suggestions", component: <SearchBarWithSuggestions /> }
+            ]}
+          />
+        )}
+
+        {isActive === "Checkboxes & Radios" && (
+          <GenericSection
+            title="Checkboxes & Radios"
+            description="Selection controls and toggles"
+            components={[
+              { name: "Simple Checkbox", component: <SimpleCheckbox /> },
+              { name: "Rounded Checkbox", component: <RoundedCheckbox /> },
+              { name: "Checkbox Group", component: <CheckboxGroup /> },
+              { name: "Indeterminate Checkbox", component: <IndeterminateCheckbox /> },
+              { name: "Simple Radio", component: <SimpleRadio /> },
+              { name: "Card Radio", component: <CardRadio /> },
+              { name: "Toggle Switch", component: <ToggleSwitch /> },
+              { name: "Toggle Switch with Labels", component: <ToggleSwitchWithLabels /> }
+            ]}
+          />
+        )}
+
+        {isActive === "Timelines" && (
+          <GenericSection
+            title="Timelines"
+            description="Event timelines and activity feeds"
+            components={[
+              { name: "Simple Timeline Item", component: <SimpleTimelineItem /> },
+              { name: "Detailed Timeline", component: <DetailedTimeline /> },
+              { name: "Horizontal Timeline", component: <HorizontalTimeline /> },
+              { name: "Activity Timeline", component: <ActivityTimeline /> },
+              { name: "Milestone Timeline", component: <MilestoneTimeline /> }
+            ]}
+          />
+        )}
+
+        {isActive === "Metric Cards" && (
+          <GenericSection
+            title="Metric Cards"
+            description="Dashboard metrics and KPIs"
+            components={[
+              { name: "Simple Metric Card", component: <SimpleMetricCard /> },
+              { name: "Compact Metric Card", component: <CompactMetricCard /> },
+              { name: "Detailed Metric Card", component: <DetailedMetricCard /> },
+              { name: "Metric Card with Chart", component: <MetricCardWithChart /> },
+              { name: "Comparison Metric Card", component: <ComparisonMetricCard /> },
+              { name: "Goal Metric Card", component: <GoalMetricCard /> },
+              { name: "Trend Metric Card", component: <TrendMetricCard /> }
+            ]}
+          />
+        )}
+
+        {isActive === "Media Cards" && (
+          <GenericSection
+            title="Media Cards"
+            description="Image, video, and audio cards"
+            components={[
+              { name: "Image Media Card", component: <ImageMediaCard /> },
+              { name: "Video Media Card", component: <VideoMediaCard /> },
+              { name: "Audio Media Card", component: <AudioMediaCard /> },
+              { name: "Document Media Card", component: <DocumentMediaCard /> },
+              { name: "Gallery Media Card", component: <GalleryMediaCard /> },
+              { name: "Playlist Media Card", component: <PlaylistMediaCard /> }
+            ]}
+          />
+        )}
+
+        {isActive === "Tags" && (
+          <GenericSection
+            title="Tags"
+            description="Labels, badges, and tags"
+            components={[
+              { name: "Simple Tag", component: <SimpleTag /> },
+              { name: "Colored Tag", component: <ColoredTag /> },
+              { name: "Removable Tag", component: <RemovableTag /> },
+              { name: "Icon Tag", component: <IconTag /> },
+              { name: "Pill Tag", component: <PillTag /> },
+              { name: "Dot Tag", component: <DotTag /> },
+              { name: "Count Tag", component: <CountTag /> },
+              { name: "Hash Tag", component: <HashTag /> },
+              { name: "Star Tag", component: <StarTag /> },
+              { name: "Zap Tag", component: <ZapTag /> },
+              { name: "Flame Tag", component: <FlameTag /> },
+              { name: "Award Tag", component: <AwardTag /> },
+              { name: "Trending Tag", component: <TrendingTag /> },
+              { name: "Verified Tag", component: <VerifiedTag /> },
+              { name: "Tag Group", component: <TagGroup /> },
+              { name: "Interactive Tag Group", component: <InteractiveTagGroup /> },
+              { name: "Size Variant Tags", component: <SizeVariantTags /> },
+              { name: "Outline Tag", component: <OutlineTag /> },
+              { name: "Solid Tag", component: <SolidTag /> },
+              { name: "Gradient Tag", component: <GradientTag /> }
             ]}
           />
         )}
